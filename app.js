@@ -11,7 +11,7 @@ req.onreadystatechange = () => {
 	    htmlEnd += "<tr>";
 		for (let item in jsonPARSE.members[0]) {
 			 htmlEnd += "<th>";
-	 		 htmlEnd += item;
+	 		 htmlEnd += item[0].toUpperCase() + item.slice(1);
 	 		 htmlEnd += "</th>";
 	 		 header.push(item);
 		}
